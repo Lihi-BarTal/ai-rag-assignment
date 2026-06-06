@@ -3,7 +3,7 @@ uvicorn
 pydantic
 langchain
 langchain-openai
-pinecone-client
+pinecone
 pandas
 python-dotenv
 mangum
