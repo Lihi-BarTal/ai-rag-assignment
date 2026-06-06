@@ -8,7 +8,7 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from mangum import Mangum
 
 app = FastAPI()
-handler = Mangum(app) # שורה זו עוזרת ל-Vercel לנהל את הבקשות ל-FastAPI
+handler = Mangum(app) 
 
 
 # onfiguration & API Keys
@@ -125,4 +125,3 @@ def handle_prompt(request: PromptRequest):
             "User": user_prompt
         }
     }
-handler = app
