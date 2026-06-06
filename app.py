@@ -125,3 +125,4 @@ def handle_prompt(request: PromptRequest):
             "User": user_prompt
         }
     }
+handler = app
