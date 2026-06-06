@@ -31,7 +31,7 @@ embeddings_model = OpenAIEmbeddings(
 # 3. Helper Functions
 # ==========================================
 def load_csv_subset(csv_path: str) -> pd.DataFrame:
-    df = pd.read_csv(csv_path, nrows=20)
+    df = pd.read_csv(csv_path)
     df.fillna("", inplace=True)
     return df
 
