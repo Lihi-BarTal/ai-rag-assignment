@@ -5,9 +5,11 @@ from pydantic import BaseModel
 from pinecone import Pinecone
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
+from mangum import Mangum
 
-# Init FastAPI app
 app = FastAPI()
+handler = Mangum(app) # שורה זו עוזרת ל-Vercel לנהל את הבקשות ל-FastAPI
+
 
 # onfiguration & API Keys
 load_dotenv()

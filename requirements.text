@@ -6,3 +6,4 @@ langchain-openai
 pinecone-client
 pandas
 python-dotenv
+mangum
